@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>	
+    <meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Apache Druid">
+<meta name="keywords" content="druid,kafka,database,analytics,streaming,real-time,real time,apache,open source">
+<meta name="author" content="Apache Software Foundation">
+
+<title>Druid | Apache Druid Community</title>
+<link rel="canonical" href="https://druid.apache.org/community/" />
+<link rel="alternate" type="application/atom+xml" href="/feed">
+<link rel="shortcut icon" href="/img/favicon.png">
+
+<link rel="stylesheet" href="/assets/css/font-awesome-5.css">
+
+<link href='//fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700,300italic|Open+Sans:300italic,400italic,600italic,400,300,600,700' rel='stylesheet' type='text/css'>
+
+<link rel="stylesheet" href="/css/bootstrap-pure.css?v=1.1">
+<link rel="stylesheet" href="/css/base.css?v=1.1">
+<link rel="stylesheet" href="/css/header.css?v=1.1">
+<link rel="stylesheet" href="/css/footer.css?v=1.1">
+<link rel="stylesheet" href="/css/syntax.css?v=1.1">
+<link rel="stylesheet" href="/css/docs.css?v=1.1">
+
+<script>
+  (function() {
+    var cx = '000162378814775985090:molvbm0vggm';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+
+
+  </head>
+  <body>	
+    <!-- Start page_header include -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+<div class="top-navigator">
+  <div class="container">
+    <div class="left-cont">
+      <a class="logo" href="/"><span class="druid-logo"></span></a>
+    </div>
+    <div class="right-cont">
+      <ul class="links">
+        <li class=""><a href="/technology">Technology</a></li>
+        <li class=""><a href="/use-cases">Use Cases</a></li>
+        <li class=""><a href="/druid-powered">Powered By</a></li>
+        <li class=""><a href="/docs/latest/design/">Docs</a></li>
+        <li class=" active"><a href="/community/">Community</a></li>
+        <li class="header-dropdown">
+          <a>Apache</a>
+          <div class="header-dropdown-menu">
+            <a href="https://www.apache.org/" target="_blank">Foundation</a>
+            <a href="https://www.apache.org/events/current-event" target="_blank">Events</a>
+            <a href="https://www.apache.org/licenses/" target="_blank">License</a>
+            <a href="https://www.apache.org/foundation/thanks.html" target="_blank">Thanks</a>
+            <a href="https://www.apache.org/security/" target="_blank">Security</a>
+            <a href="https://www.apache.org/foundation/sponsorship.html" target="_blank">Sponsorship</a>
+          </div>
+        </li>
+        <li class=" button-link"><a href="/downloads.html">Download</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="action-button menu-icon">
+    <span class="fa fa-bars"></span> MENU
+  </div>
+  <div class="action-button menu-icon-close">
+    <span class="fa fa-times"></span> MENU
+  </div>
+</div>
+
+<script type="text/javascript">
+  var $menu = $('.right-cont');
+  var $menuIcon = $('.menu-icon');
+  var $menuIconClose = $('.menu-icon-close');
+
+  function showMenu() {
+    $menu.fadeIn(100);
+    $menuIcon.fadeOut(100);
+    $menuIconClose.fadeIn(100);
+  }
+
+  $menuIcon.click(showMenu);
+
+  function hideMenu() {
+    $menu.fadeOut(100);
+    $menuIconClose.fadeOut(100);
+    $menuIcon.fadeIn(100);
+  }
+
+  $menuIconClose.click(hideMenu);
+
+  $(window).resize(function() {
+    if ($(window).width() >= 840) {
+      $menu.fadeIn(100);
+      $menuIcon.fadeOut(100);
+      $menuIconClose.fadeOut(100);
+    }
+    else {
+      $menu.fadeOut(100);
+      $menuIcon.fadeIn(100);
+      $menuIconClose.fadeOut(100);
+    }
+  });
+</script>
+
+<!-- Stop page_header include -->
+
+
+    <div class="druid-header">
+  <div class="container">
+    <h1>Apache Druid Community</h1>
+    <h4></h4>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <h2 id="community">Community</h2>
+
+<p>Most discussion about Druid happens over <a href="/community/join-slack?v=1">Slack</a>, <a href="https://github.com/apache/druid">GitHub</a>, and the <a href="https://lists.apache.org/list.html?dev@druid.apache.org">Apache Dev list</a>, but those aren&#39;t the only way to interact with the Druid
+community. We also do chat, meetups, and more.</p>
+
+<p>Check out the following resources if you&#39;re looking for help, to discuss Druid development, or just stay up to date:</p>
+
+<ul>
+<li><strong>Slack:</strong> Many users and committers are present on Apache Druid Slack. Use this link to join and invite others: <a href="/community/join-slack?v=1">https://druid.apache.org/community/join-slack</a>. This is the perfect place to ask for help if you need it!</li>
+<li><strong>GitHub:</strong> Star us at <a href="https://github.com/apache/druid">apache/druid</a> and use this to follow Druid development, raise
+issues, or contribute pull requests. If you&#39;re interested in development, please see the <a href="#contributing">Contributing</a>
+section below for details on our development process.</li>
+<li><strong>Development mailing list:</strong> <a href="https://lists.apache.org/list.html?dev@druid.apache.org">dev@druid.apache.org</a> for
+discussion about project development.</li>
+<li><strong>Twitter:</strong> Follow us on Twitter at <a href="https://twitter.com/druidio">@druidio</a>.</li>
+</ul>
+
+<p>Also check out:</p>
+
+<ul>
+<li><strong>User mailing list:</strong> <a href="https://groups.google.com/forum/#!forum/druid-user">druid-user@googlegroups.com</a> for general
+discussion, questions, and announcements.</li>
+<li><strong>Meetups:</strong> Check out <a href="https://www.meetup.com/topics/apache-druid/">Apache Druid on meetup.com</a> for links to regular
+meetups in cities all over the world.</li>
+<li><strong>StackOverflow:</strong> While the user mailing list is the primary resource for asking questions, if you prefer
+StackOverflow, make sure to tag your question with <code>druid</code> or <code>apache-druid</code>.</li>
+</ul>
+
+<h2 id="getting-help">Getting help</h2>
+
+<p>The best place to get a wide variety of help about Druid is via <code>#druid</code> on the Apache Slack team. There is also a druid user 
+google group <a href="https://groups.google.com/forum/#!forum/druid-user">druid-user@googlegroups.com</a> however slack is the preferred way to get help. You can also report issues and problems, or suggest
+new features, on <a href="https://github.com/apache/druid">GitHub</a>.</p>
+
+<p>Third party companies also provide commercial support and services for Druid, including:</p>
+
+<ul>
+<li><a href="https://www.cloudera.com/">Cloudera</a></li>
+<li><a href="https://datumo.io/">Datumo</a></li>
+<li><a href="https://www.deep.bi/solutions/apache-druid">Deep.BI</a></li>
+<li><a href="https://imply.io/">Imply</a></li>
+<li><a href="https://www.rilldata.com/">Rill Data</a></li>
+</ul>
+
+<h2 id="contributing">Contributing</h2>
+
+<p>Druid is a community-led project and we are delighted to receive contributions
+of anything from minor fixes to big new features.</p>
+
+<h3 id="what-to-work-on">What to work on</h3>
+
+<p>If you have an itch to scratch, then by all means do that! Fixing bugs you run
+into, or adding features you need, are both immensely helpful.</p>
+
+<p>If you&#39;re looking for some starter projects, we maintain a <a href="https://github.com/apache/druid/issues?q=is%3Aopen+is%3Aissue+label%3AStarter">list of issues</a> suitable
+for new developers.</p>
+
+<p>There are plenty of ways to help outside writing Druid code. <em>Code review of pull requests</em>
+(even if you are not a committer), feature suggestions, reporting bugs, <a href="/docs//">documentation</a>
+and usability feedback all matter immensely. Another big way to help is
+through <a href="/docs/latest/development/libraries.html">client libraries</a>, which are
+avaialble in a variety of languages. If you develop a new one, we&#39;ll be happy
+to include it in the list.</p>
+
+<h3 id="getting-your-changes-accepted">Getting your changes accepted</h3>
+
+<p>Patches to Druid are done through <a href="https://github.com/apache/druid/pulls">GitHub pull requests</a>.</p>
+
+<p>Pull requests require one approval (+1) from an established committer on code and text (for documentation) levels. The
+exception is major architectural changes or API changes, and/or changes to</p>
+
+<ul>
+<li>HTTP requests and responses (e. g. a new HTTP endpoint)</li>
+<li><a href="/docs/latest/development/modules.html">Interfaces for extensions</a></li>
+<li>Server configuration (e. g. altering the behavior of a config property)</li>
+<li>Emitted metrics</li>
+<li>Other major changes, judged by the discretion of Druid committers</li>
+</ul>
+
+<p>warrant additional design and compatibility review. Such pull requests require design approvals from three different
+committers (one of them could also be the author of the pull request). For those, it can help to discuss things
+on the Druid development list <a href="https://lists.apache.org/list.html?dev@druid.apache.org">dev@druid.apache.org</a> or a github issue beforehand.</p>
+
+<p>In general please follow the <a href="https://github.com/apache/druid/blob/master/CONTRIBUTING.md">contributing guidelines</a>
+when sending in pull requests. This will help review proceed as quickly as
+possible.</p>
+
+<h3 id="testing">Testing</h3>
+
+<p>All Pull Requests are automatically tested on <a href="https://travis-ci.com/apache/druid">Travis CI</a> on both AMD64 and ARM64 architectures.</p>
+
+<h3 id="committers">Committers</h3>
+
+<p>Committers are collectively responsible for Druid&#39;s technical management. This involves
+setting the direction of the project, contributing code, and reviewing code contributed
+by others.</p>
+
+<p>You don&#39;t need to be a committer to contribute- pull requests are welcome from anyone.</p>
+
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Organization</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><a href="https://github.com/abhishekagarwal87">Abhishek Agarwal</a></td>
+<td><a href="https://imply.io/">Imply</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/AlexanderSaydakov">Alexander Saydakov</a></td>
+<td><a href="https://www.verizonmedia.com/">Verizon Media</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/a2l007">Atul Mohan</a></td>
+<td><a href="https://www.yahoo.com/">Yahoo</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/asdf2014">Benedict Jin</a></td>
+<td><a href="https://www.alibaba.com/">Alibaba</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/drcrallen">Charles Allen</a></td>
+<td><a href="https://www.snap.com/en-US/">Snap</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/ccaominh">Chi Cao Minh</a></td>
+<td><a href="https://imply.io/">Imply</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/clintropolis">Clint Wylie</a></td>
+<td><a href="https://imply.io/">Imply</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/glasser">David Glasser</a></td>
+<td><a href="https://apollographql.com/">Apollo GraphQL</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/dclim">David Lim</a></td>
+<td><a href="https://imply.io/">Imply</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/gaodayue">Daoyue Gao</a></td>
+<td><a href="http://www.meituan.com/">Meituan</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/Dylan1312">Dylan Wylie</a></td>
+<td><a href="https://www.spotx.tv/">SpotX</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/egor-ryashin">Egor Rashin</a></td>
+<td><a href="https://www.rilldata.com/">Rill Data</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/cheddar">Eric Tschetter</a></td>
+<td><a href="https://www.splunk.com/">Splunk</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/fjy">Fangjin Yang</a></td>
+<td><a href="https://imply.io/">Imply</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/Fokko">Fokko Driesprong</a></td>
+<td><a href="https://godatadriven.com/">GoDataDriven</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/FrankChen021">Frank Chen</a></td>
+<td><a href="https://shopee.sg/">Shopee</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/kamaci">Furkan Kamaci</a></td>
+<td><a href="https://lagom.ai/">Lagom</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/gianm">Gian Merlino</a></td>
+<td><a href="https://imply.io/">Imply</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/himanshug">Himanshu Gupta</a></td>
+<td><a href="https://www.splunk.com/">Splunk</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/jihoonson">Jihoon Son</a></td>
+<td><a href="https://imply.io/">Imply</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/jon-wei">Jonathan Wei</a></td>
+<td><a href="https://imply.io/">Imply</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/julianhyde">Julian Hyde</a></td>
+<td><a href="https://looker.com/">Looker</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/junrao">Jun Rao</a></td>
+<td><a href="https://www.confluent.io/">Confluent</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/kaijianding">Kaijian Ding</a></td>
+<td><a href="https://www.alibaba.com/">Alibaba</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/kfaraz">Kashif Faraz</a></td>
+<td><a href="https://imply.io/">Imply</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/kurtyoung">Kurt Young</a></td>
+<td><a href="https://www.alibaba.com/">Alibaba</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/binlijin">Lijin Bin</a></td>
+<td><a href="https://www.alibaba.com/">Alibaba</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/capistrant">Lucas Capistrant</a></td>
+<td><a href="https://www.target.com/">Target</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/mcbrewster">Maggie Brewster</a></td>
+<td><a href="https://www.imply.io/">Imply</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/mistercrunch">Maxime Beauchemin</a></td>
+<td><a href="http://preset.io/">Preset</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/maytasm">Maytas Monsereenusorn</a></td>
+<td><a href="https://www.imply.io/">Imply</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/michaelschiff">Michael Schiff</a></td>
+<td><a href="https://www.adobe.com/">Adobe</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/QiuMM">Mingming Qiu</a></td>
+<td><a href="https://bytedance.com/">Bytedance</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/b-slim">Mohamed Slim Bouguerra</a></td>
+<td><a href="https://www.linkedin.com/">LinkedIn</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/navis">Navis Ryu</a></td>
+<td><a href="https://www.sktelecom.com/index.html">SK Telecom</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/niketh">Niketh Sabbineni</a></td>
+<td><a href="https://www.verizonmedia.com/">Verizon Media</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/nishantmonu51">Nishant Bangarwa</a></td>
+<td><a href="https://www.rilldata.com/">Rill Data</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/pjain1">Parag Jain</a></td>
+<td><a href="https://www.rilldata.com/">Rill Data</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/ptgoetz">P. Taylor Goetz</a></td>
+<td><a href="https://www.epam.com/">EPAM</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/leventov">Roman Leventov</a></td>
+<td><a href="https://www.snap.com/en-US/">Snap</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/samarthjain">Samarth Jain</a></td>
+<td><a href="https://www.netflix.com/">Netflix</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/sthetland">Steve Hetland</a></td>
+<td><a href="https://imply.io/">Imply</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/suneet-s">Suneet Saldanha</a></td>
+<td><a href="https://imply.io/">Imply</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/surekhasaharan">Surekha Saharan</a></td>
+<td><a href="https://imply.io/">Imply</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/vogievetsky">Vadim Ogievetsky</a></td>
+<td><a href="https://imply.io/">Imply</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/xvrl">Xavier Léauté</a></td>
+<td><a href="https://www.confluent.io/">Confluent</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/zhangxinyu1">Xinyu Zhang</a></td>
+<td><a href="https://www.360.cn/">Qihoo 360</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/zhangyue19921010">Yue Zhang</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://github.com/zachjsh">Zach Sherman</a></td>
+<td><a href="https://imply.io/">Imply</a></td>
+</tr>
+</tbody></table>
+
+<h3 id="becoming-a-committer">Becoming a committer</h3>
+
+<p>If you&#39;d like to become a committer, that&#39;s great! Please contact one of the
+existing committers for a walk through the process. Basically, what we&#39;re
+looking for is an interest in ongoing contributions to Druid.</p>
+
+<h3 id="general-committer-guidelines">General committer guidelines</h3>
+
+<p>If you are an official Druid committer then congratulations! You are part of a fantastic group of people. Here are some guidelines to follow to help ensure the Druid project continues to grow and improve:</p>
+
+<ol>
+<li>You can merge your own pull request if it fits the rest of the criteria. A common thing to see is &quot;+1 after travis&quot; from other committers.</li>
+<li>A pull request should have at least one +1 from a committer who is not the author, on the &quot;code/textual&quot; level of review.</li>
+<li>Pull requests which have just one +1 from a committer couldn&#39;t be merged earlier than after 3 working days since PR submission.</li>
+<li>A pull request with just one +1 could be merged only by (or in coordination with) the committer who provided the review. Because the reviewer may think that the PR is complex or risky enough that needs another pair of eyes to look at it. If this is the case, the first reviewer should indicate this in the PR approval message.</li>
+<li>If a pull request has two or more +1&#39;s from committers who are not the author, it could be merged immediately and by any committer. But still, enough time since the PR submission should pass to give folks a reasonable chance to indicate a desire to comment on the pull request. AKA: don&#39;t merge a pull request that was submitted Friday evening until at least 1~2 regular work days have passed. Use good judgement here.</li>
+<li>Major architectural and backwards incompatible changes, or changes which have long-term maintainance consequences (see examples in <a href="#getting-your-changes-accepted">the &quot;Getting your changes accepted&quot; section above</a>), should have at least three +1&#39;s from committers, on the &quot;design&quot; level of review. One approval could be from the author of the PR. The first committer who indicates that a PR needs design review should add the <code>Design Review</code> tag to such a pull request.</li>
+<li>Travis-CI should pass or have some <strong>very</strong> good reason why it won&#39;t pass for a pull request.</li>
+<li>You reasonably believe that all comments have been addressed.</li>
+<li>You are expected to be the champion for your own pull requests.</li>
+<li>Being a champion on a pull request can be a significant undertaking depending on the size of the code change and what parts of the code it touches. It may require communicating with other developers, reconciling differences, organizing community feedback, and/or following up with people who have commented in a pull request to ensure comments have been addressed.</li>
+<li>Sometimes code is presented as a work-in-progress or as a point of discussion. Use the <code>WIP</code> or <code>Discuss</code> tags on a pull request in such a case.</li>
+<li>If a pull request you are championing is taking longer than expected to merge, be sure to raise the issue in the developer sync.</li>
+<li>Limit the number of pull requests you are championing at the same time.</li>
+<li>Prioritize code reviews to look at pull requests that are blockers for the next release (see the Milestone marker on the pull request)</li>
+<li>Help serve as champion for pull requests that originate from new committers.</li>
+<li>If you feel a pull request is required for the next release, mark it as such in the Milestone of the pull request.</li>
+<li>Do not comment on a pull request unless you are willing to follow up on the edits.</li>
+<li>Give priority to getting older pull requests merged. (Either as their champion or as an active commenter)</li>
+<li>And most importantly.. the PMC desires to ensure a positive and effective developer experience! If you find that things are not functioning to your expectations, pleaes raise the issue.</li>
+</ol>
+
+<p>Remember, we all want to see this project thrive!</p>
+
+<h2 id="governance">Governance</h2>
+
+<p>The PMC (Project Management Committee) is responsible for the administrative
+aspects of the Druid project. The responsibilities of the PMC include:</p>
+
+<ul>
+<li>Approving releases</li>
+<li>Nominating new committers</li>
+<li>Maintaining the project&#39;s shared resources, including the github account,
+mailing lists, websites, social media channels, etc.</li>
+<li>Maintaining guidelines for the project</li>
+</ul>
+
+    </div>
+  </div>
+</div>
+
+    
+    <!-- Start page_footer include -->
+<footer class="druid-footer">
+<div class="container">
+  <div class="text-center">
+    <p>
+    <a href="/technology">Technology</a>&ensp;·&ensp;
+    <a href="/use-cases">Use Cases</a>&ensp;·&ensp;
+    <a href="/druid-powered">Powered by Druid</a>&ensp;·&ensp;
+    <a href="/docs/latest/">Docs</a>&ensp;·&ensp;
+    <a href="/community/">Community</a>&ensp;·&ensp;
+    <a href="/downloads.html">Download</a>&ensp;·&ensp;
+    <a href="/faq">FAQ</a>
+    </p>
+  </div>
+  <div class="text-center">
+    <a title="Join the user group" href="https://groups.google.com/forum/#!forum/druid-user" target="_blank"><span class="fa fa-comments"></span></a>&ensp;·&ensp;
+    <a title="Follow Druid" href="https://twitter.com/druidio" target="_blank"><span class="fab fa-twitter"></span></a>&ensp;·&ensp;
+    <a title="GitHub" href="https://github.com/apache/druid" target="_blank"><span class="fab fa-github"></span></a>
+  </div>
+  <div class="text-center license">
+    Copyright © 2020 <a href="https://www.apache.org/" target="_blank">Apache Software Foundation</a>.<br>
+    Except where otherwise noted, licensed under <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>.<br>
+    Apache Druid, Druid, and the Druid logo are either registered trademarks or trademarks of The Apache Software Foundation in the United States and other countries.
+  </div>
+</div>
+</footer>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-131010415-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-131010415-1');
+</script>
+<script>
+  function trackDownload(type, url) {
+    ga('send', 'event', 'download', type, url);
+  }
+</script>
+<script src="//code.jquery.com/jquery.min.js"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script src="/assets/js/druid.js"></script>
+<!-- stop page_footer include -->
+
+    
+  </body>
+</html>
